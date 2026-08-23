@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Assignment - Q1 to Q15</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>HTML Assignment</h1>
+        <p>Questions 1 to 15</p>
+    </header>
+
+    <hr>
+    <section>
+        <h2>Q1. Multi-Section Resume Page</h2>
+
+        <header>
+            <h3>Harshika Goyal</h3>
+            <p>Email: harshika@example.com</p>
+            <p>Phone: 9876543210</p>
+        </header>
+
+        <nav>
+            <a href="#about">About</a> |
+            <a href="#skills">Skills</a> |
+            <a href="#projects">Projects</a> |
+            <a href="#education">Education</a>
+        </nav>
+
+        <main>
+
+            <section id="about">
+                <h3>About Me</h3>
+                <p>
+                    I am a Computer Science student interested in
+                    Cloud Computing, AWS, Java and Web Development.
+                </p>
+            </section>
+
+            <section id="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Java</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>AWS</li>
+                    <li>Git and GitHub</li>
+                </ul>
+            </section>
+
+            <section id="projects">
+                <h3>Projects</h3>
+                <ol>
+                    <li>Cloud Resume Challenge</li>
+                    <li>Employee Management System</li>
+                    <li>Interview Practice Hub</li>
+                </ol>
+            </section>
+
+            <section id="education">
+                <h3>Education</h3>
+
+                <table border="1">
+                    <tr>
+                        <th>Course</th>
+                        <th>Institute</th>
+                        <th>Year</th>
+                    </tr>
+
+                    <tr>
+                        <td>B.Tech CSE</td>
+                        <td>XYZ University</td>
+                        <td>2027</td>
+                    </tr>
+
+                    <tr>
+                        <td>12th</td>
+                        <td>ABC School</td>
+                        <td>2023</td>
+                    </tr>
+                </table>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Harshika Goyal</p>
+        </footer>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Q2. Product Catalog</h2>
+
+        <table border="1">
+            <tr>
+                <th>Product Name</th>
+                <th>Image</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Availability</th>
+            </tr>
+
+            <tr>
+                <td>Laptop</td>
+
+                <td>
+                    <img src="laptop.jpg"
+                         alt="Laptop"
+                         width="100">
+                </td>
+
+                <td>High performance laptop</td>
+                <td>₹60,000</td>
+
+                <td rowspan="2">Available</td>
+            </tr>
+
+            <tr>
+                <td>Smartphone</td>
+
+                <td>
+                    <img src="phone.jpg"
+                         alt="Smartphone"
+                         width="100">
+                </td>
+
+                <td>Latest Android smartphone</td>
+                <td>₹25,000</td>
+            </tr>
+
+            <tr>
+                <td>Headphones</td>
+
+                <td>
+                    <img src="headphones.jpg"
+                         alt="Headphones"
+                         width="100">
+                </td>
+
+                <td>Wireless headphones</td>
+                <td>₹2,000</td>
+                <td>Out of Stock</td>
+            </tr>
+
+            <tr>
+                <td colspan="3">Special Offer</td>
+                <td colspan="2">10% Discount</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+
+    <section>
+        <h2>Q3. Course Registration Form</h2>
+
+        <form>
+
+            <fieldset>
+                <legend>Student Information</legend>
+
+                <label>Name:</label>
+                <input type="text" name="name">
+
+                <br><br>
+
+                <label>Email:</label>
+                <input type="email" name="email">
+
+                <br><br>
+
+                <label>Select Course:</label>
+
+                <select name="course">
+                    <option selected>Java Programming</option>
+                    <option>AWS Cloud</option>
+                    <option>Web Development</option>
+                    <option>Python</option>
+                </select>
+
+                <br><br>
+
+                <input type="submit" value="Register">
+
+            </fieldset>
+
+        </form>
+
+        <h3>Course Schedule</h3>
+
+        <table border="1">
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Instructor</th>
+            </tr>
+
+            <tr>
+                <td>Monday</td>
+                <td>10:00 AM - 12:00 PM</td>
+                <td>Mr. Sharma</td>
+            </tr>
+
+            <tr>
+                <td>Wednesday</td>
+                <td>2:00 PM - 4:00 PM</td>
+                <td>Ms. Neha</td>
+            </tr>
+
+            <tr>
+                <td>Friday</td>
+                <td>11:00 AM - 1:00 PM</td>
+                <td>Mr. Raj</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Q4. Company Layout Page</h2>
+
+        <header>
+            <h3>Tech Solutions Pvt. Ltd.</h3>
+        </header>
+
+        <nav>
+            <a href="#company-about">About</a> |
+            <a href="#services">Services</a> |
+            <a href="#company-contact">Contact</a>
+        </nav>
+
+        <main>
+
+            <section id="company-about">
+                <h3>About the Company</h3>
+
+                <p>
+                    Tech Solutions is a software company providing
+                    modern technology solutions to businesses.
+                </p>
+            </section>
+
+            <section id="services">
+                <h3>Services Offered</h3>
+
+                <ul>
+                    <li>Web Development</li>
+                    <li>Cloud Computing</li>
+                    <li>Software Development</li>
+                    <li>IT Consulting</li>
+                </ul>
+            </section>
+
+        </main>
+
+        <aside>
+            <h3>CEO Quote</h3>
+
+            <blockquote>
+                Technology becomes powerful when it solves
+                real-world problems.
+            </blockquote>
+        </aside>
+
+        <footer id="company-contact">
+            <p>Email: contact@techsolutions.com</p>
+            <p>Address: Delhi, India</p>
+        </footer>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Q5. University - Departments - Courses - Topics</h2>
+
+        <ul>
+
+            <li>
+                Computer Science Department
+
+                <ol>
+
+                    <li>
+                        B.Tech
+
+                        <ul>
+
+                            <li>
+                                Programming
+
+                                <ul>
+                                    <li>Java</li>
+                                    <li>Python</li>
+                                    <li>C++</li>
+                                </ul>
+
+                            </li>
+
+                            <li>
+                                Database
+
+                                <ul>
+                                    <li>DBMS</li>
+                                    <li>SQL</li>
+                                </ul>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        M.Tech
+
+                        <ul>
+                            <li>Machine Learning</li>
+                            <li>Artificial Intelligence</li>
+                        </ul>
+                    </li>
+
+                </ol>
+            </li>
+
+            <li>
+                Electronics Department
+
+                <ol>
+
+                    <li>
+                        B.Tech
+
+                        <ul>
+                            <li>Digital Electronics</li>
+                            <li>Microprocessors</li>
+                        </ul>
+
+                    </li>
+
+                </ol>
+            </li>
+
+        </ul>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Q6. Restaurant Menu</h2>
+
+        <header>
+            <h3>Delicious Bites Restaurant</h3>
+        </header>
+
+        <nav>
+            <a href="#starters">Starters</a> |
+            <a href="#main-course">Main Course</a> |
+            <a href="#desserts">Desserts</a>
+        </nav>
+
+        <section id="starters">
+
+            <h3>Starters</h3>
+
+            <table border="1">
+                <tr>
+                    <th>Dish Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+
+                <tr>
+                    <td>Spring Rolls</td>
+                    <td>Crispy vegetable rolls</td>
+                    <td>₹120</td>
+                </tr>
+
+                <tr>
+                    <td>Paneer Tikka</td>
+                    <td>Grilled spicy paneer</td>
+                    <td>₹180</td>
+                </tr>
+            </table>
+
+        </section>
+
+        <section id="main-course">
+
+            <h3>Main Course</h3>
+
+            <table border="1">
+                <tr>
+                    <th>Dish Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+
+                <tr>
+                    <td>Paneer Butter Masala</td>
+                    <td>Paneer in creamy gravy</td>
+                    <td>₹250</td>
+                </tr>
+
+                <tr>
+                    <td>Veg Biryani</td>
+                    <td>Spiced rice with vegetables</td>
+                    <td>₹220</td>
+                </tr>
+            </table>
+
+        </section>
+
+        <section id="desserts">
+
+            <h3>Desserts</h3>
+
+            <table border="1">
+                <tr>
+                    <th>Dish Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+
+                <tr>
+                    <td>Gulab Jamun</td>
+                    <td>Sweet milk dumplings</td>
+                    <td>₹80</td>
+                </tr>
+
+                <tr>
+                    <td>Ice Cream</td>
+                    <td>Vanilla ice cream</td>
+                    <td>₹100</td>
+                </tr>
+            </table>
+
+        </section>
+
+        <footer>
+            <p>Contact: 9876543210</p>
+            <p>Address: Delhi, India</p>
+        </footer>
+
+    </section>
+
+    <hr>
+
+
+    <section>
+        <h2>Q7. Conference Schedule</h2>
+
+        <table border="1">
+
+            <thead>
+                <tr>
+                    <th>Session</th>
+                    <th>Time</th>
+                    <th>Topic</th>
+                    <th>Speaker</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Morning</td>
+                    <td>9:00 AM</td>
+                    <td>Artificial Intelligence</td>
+                    <td>Dr. Sharma</td>
+                </tr>
+
+                <tr>
+                    <td>Morning</td>
+                    <td>11:00 AM</td>
+                    <td>Cloud Computing</td>
+                    <td>Ms. Neha</td>
+                </tr>
+
+                <tr>
+                    <td>Afternoon</td>
+                    <td>2:00 PM</td>
+                    <td>Cyber Security</td>
+                    <td>Mr. Raj</td>
+                </tr>
+
+                <tr>
+                    <td>Evening</td>
+                    <td>5:00 PM</td>
+                    <td>Future of Technology</td>
+                    <td>Dr. Verma</td>
+                </tr>
+
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="4">
+                        Conference ends at 6:00 PM
+                    </td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </section>
+
+    <hr>
+
+
+    <section>
+        <h2>Q8. Student Report Page</h2>
+
+        <h3>ABC Public School</h3>
+
+        <table border="1">
+
+            <tr>
+                <th title="Student Name">Name</th>
+                <td colspan="2">Harshika Goyal</td>
+            </tr>
+
+            <tr>
+                <th>Subject</th>
+                <th>Marks</th>
+                <th>Maximum Marks</th>
+            </tr>
+
+            <tr>
+                <td>English</td>
+                <td>85</td>
+                <td>100</td>
+            </tr>
+
+            <tr>
+                <td>Mathematics</td>
+                <td>90</td>
+                <td>100</td>
+            </tr>
+
+            <tr>
+                <td>Computer Science</td>
+                <td>95</td>
+                <td>100</td>
+            </tr>
+
+            <tr>
+                <td>Physics</td>
+                <td>80</td>
+                <td>100</td>
+            </tr>
+
+            <tr>
+                <td>Chemistry</td>
+                <td>85</td>
+                <td>100</td>
+            </tr>
+
+            <tr>
+                <th colspan="2">Total</th>
+                <td>435 / 500</td>
+            </tr>
+
+            <tr>
+                <th colspan="2">Percentage</th>
+                <td>87%</td>
+            </tr>
+
+        </table>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Q9. Top 3 Travel Destinations</h2>
+
+        <header>
+            <h3>Top 3 Travel Destinations</h3>
+        </header>
+
+        <main>
+
+            <article>
+
+                <h3>Paris</h3>
+
+                <img src="paris.jpg"
+                     alt="Paris"
+                     width="250">
+
+                <p>
+                    Paris is famous for the Eiffel Tower,
+                    museums and beautiful streets.
+                </p>
+
+                <blockquote>
+                    Paris is one of the most beautiful cities
+                    I have visited.
+                </blockquote>
+
+            </article>
+
+            <article>
+
+                <h3>Dubai</h3>
+
+                <img src="dubai.jpg"
+                     alt="Dubai"
+                     width="250">
+
+                <p>
+                    Dubai is known for modern architecture,
+                    luxury shopping and amazing attractions.
+                </p>
+
+                <blockquote>
+                    Dubai offers an unforgettable travel experience.
+                </blockquote>
+
+            </article>
+
+            <article>
+
+                <h3>Manali</h3>
+
+                <img src="manali.jpg"
+                     alt="Manali"
+                     width="250">
+
+                <p>
+                    Manali is a beautiful hill station surrounded
+                    by mountains and nature.
+                </p>
+
+                <blockquote>
+                    Manali is perfect for people who love mountains.
+                </blockquote>
+
+            </article>
+
+        </main>
+
+        <aside>
+
+            <h3>Travel Tips</h3>
+
+            <ul>
+                <li>Carry necessary documents.</li>
+                <li>Check the weather before travelling.</li>
+                <li>Keep emergency contacts.</li>
+                <li>Carry basic medicines.</li>
+            </ul>
+
+        </aside>
+
+        <footer>
+            <p>&copy; 2026 Travel Guide</p>
+        </footer>
+
+    </section>
+
+    <hr>
+
+
+    <section>
+
+        <h2>Q10. Dropdown-Based Selection</h2>
+
+        <label>Country:</label>
+
+        <select>
+            <option selected>India</option>
+            <option>USA</option>
+            <option>France</option>
+            <option>Japan</option>
+        </select>
+
+        <br><br>
+
+        <label>State:</label>
+
+        <select>
+            <option selected>Uttar Pradesh</option>
+            <option>Delhi</option>
+            <option>Maharashtra</option>
+            <option>Rajasthan</option>
+        </select>
+
+        <br><br>
+
+        <label>City:</label>
+
+        <select>
+            <option selected>Delhi</option>
+            <option>Agra</option>
+            <option>Mumbai</option>
+            <option>Jaipur</option>
+        </select>
+
+        <br><br>
+
+        <label>Favorite Tourist Place:</label>
+
+        <select>
+            <option selected>Taj Mahal</option>
+            <option>India Gate</option>
+            <option>Gateway of India</option>
+            <option>Hawa Mahal</option>
+        </select>
+
+        <p>
+            My selected destination is India, Uttar Pradesh,
+            Delhi, and my favorite tourist place is Taj Mahal.
+        </p>
+
+    </section>
+
+    <hr>
+
+
+    
+    <section>
+
+        <h2>Q11. News Layout</h2>
+
+        <header>
+            <h3>Daily News</h3>
+        </header>
+
+        <nav>
+            <a href="#sports">Sports</a> |
+            <a href="#technology">Technology</a> |
+            <a href="#politics">Politics</a>
+        </nav>
+
+        <main>
+
+            <article id="sports">
+
+                <h3>India Wins Cricket Match</h3>
+
+                <time datetime="2026-08-23">
+                    23 August 2026
+                </time>
+
+                <p>
+                    India won an exciting cricket match with
+                    an impressive performance by the team.
+                </p>
+
+                <a href="https://example.com">
+                    Source
+                </a>
+
+            </article>
+
+            <article id="technology">
+
+                <h3>New Technology Trends</h3>
+
+                <time datetime="2026-08-23">
+                    23 August 2026
+                </time>
+
+                <p>
+                    New developments in artificial intelligence
+                    and cloud computing are changing the industry.
+                </p>
+
+                <a href="https://example.com">
+                    Source
+                </a>
+
+            </article>
+
+            <article id="politics">
+
+                <h3>New Government Announcement</h3>
+
+                <time datetime="2026-08-23">
+                    23 August 2026
+                </time>
+
+                <p>
+                    The government announced several new
+                    initiatives for citizens.
+                </p>
+
+                <a href="https://example.com">
+                    Source
+                </a>
+
+            </article>
+
+        </main>
+
+        <aside>
+
+            <h3>Popular Topics</h3>
+
+            <ul>
+                <li>Cricket</li>
+                <li>Artificial Intelligence</li>
+                <li>Cloud Computing</li>
+                <li>Education</li>
+            </ul>
+
+        </aside>
+
+        <footer>
+
+            <p>Contact: news@example.com</p>
+            <p>&copy; 2026 Daily News</p>
+
+        </footer>
+
+    </section>
+
+    <hr>
+
+
+    <section>
+
+        <h2>Q12. Quotation Showcase</h2>
+
+        <section>
+
+            <h3>Quote 1</h3>
+
+            <blockquote>
+                The future depends on what you do today.
+            </blockquote>
+
+            <p>
+                <cite>Mahatma Gandhi</cite>
+            </p>
+
+        </section>
+
+        <section>
+
+            <h3>Quote 2</h3>
+
+            <blockquote>
+                The only way to do great work is to love what you do.
+            </blockquote>
+
+            <p>
+                <cite>Steve Jobs</cite>
+            </p>
+
+        </section>
+
+        <section>
+
+            <h3>Quote 3</h3>
+
+            <blockquote>
+                Success is not final, failure is not fatal.
+            </blockquote>
+
+            <p>
+                <cite>Winston Churchill</cite>
+            </p>
+
+        </section>
+
+        <p>
+            Quotes inspire people by providing motivation,
+            wisdom and positive thoughts.
+        </p>
+
+    </section>
+
+    <hr>
+
+    <section>
+
+        <h2>Q13. Blog Layout</h2>
+
+        <header>
+            <h3>Harshika's Blog</h3>
+        </header>
+
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#blogs">Blogs</a> |
+            <a href="#blog-about">About</a>
+        </nav>
+
+        <main>
+
+            <article id="blogs">
+
+                <h3>My First Blog</h3>
+
+                <time datetime="2026-08-23">
+                    23 August 2026
+                </time>
+
+                <p>
+                    This is my first blog. I am learning HTML
+                    and web development.
+                </p>
+
+                <blockquote>
+                    Learning something new every day makes us better.
+                </blockquote>
+
+            </article>
+
+            <article>
+
+                <h3>Things I Learned This Week</h3>
+
+                <time datetime="2026-08-23">
+                    23 August 2026
+                </time>
+
+                <p>
+                    This week I learned about HTML semantic elements,
+                    forms, tables, lists and different HTML tags.
+                </p>
+
+                <blockquote>
+                    Every new skill is a step towards success.
+                </blockquote>
+
+            </article>
+
+        </main>
+
+        <footer>
+            <p>Written by Harshika Goyal</p>
+        </footer>
+
+    </section>
+
+    <hr>
+
+
+    <section>
+
+        <h2>Q14. Movie Database</h2>
+
+        <table border="1" title="Movie Database">
+
+            <caption>
+                <strong>Movie Database</strong>
+            </caption>
+
+            <tr>
+                <th>Movie Name</th>
+                <th>Genre</th>
+                <th>Year</th>
+                <th>IMDB Rating</th>
+                <th>Link</th>
+            </tr>
+
+            <tr>
+                <td>3 Idiots</td>
+                <td>Comedy/Drama</td>
+                <td>2009</td>
+                <td>8.4</td>
+                <td>
+                    <a href="https://www.imdb.com/">
+                        IMDB
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Inception</td>
+                <td>Sci-Fi</td>
+                <td>2010</td>
+                <td>8.8</td>
+                <td>
+                    <a href="https://www.imdb.com/">
+                        IMDB
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Interstellar</td>
+                <td>Sci-Fi</td>
+                <td>2014</td>
+                <td>8.7</td>
+                <td>
+                    <a href="https://www.imdb.com/">
+                        IMDB
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="5">
+                    <small>
+                        Ratings are provided for educational purposes.
+                    </small>
+                </td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <hr>
+
+    <section>
+
+        <h2>Q15. Portfolio Layout</h2>
+
+        <header>
+
+            <h3>Harshika Goyal</h3>
+
+            <p>
+                Computer Science Student |
+                Cloud Enthusiast
+            </p>
+
+        </header>
+
+        <nav>
+
+            <a href="#portfolio-about">About Me</a> |
+            <a href="#portfolio-skills">Skills</a> |
+            <a href="#portfolio-projects">Projects</a> |
+            <a href="#portfolio-contact">Contact</a>
+
+        </nav>
+
+        <main>
+
+            <section id="portfolio-about">
+
+                <h3>About Me</h3>
+
+                <p>
+                    I am a Computer Science student interested
+                    in Cloud Computing, AWS, Java and Web Development.
+                </p>
+
+                <blockquote>
+                    Keep learning, keep building and keep improving.
+                </blockquote>
+
+            </section>
+
+            <section id="portfolio-skills">
+
+                <h3>Skills</h3>
+
+                <ul>
+                    <li>Java</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>AWS Cloud</li>
+                    <li>Git and GitHub</li>
+                </ul>
+
+            </section>
+
+            <section id="portfolio-projects">
+
+                <h3>Projects</h3>
+
+                <ol>
+                    <li>Cloud Resume Challenge</li>
+                    <li>Employee Management System</li>
+                    <li>Interview Practice Hub</li>
+                </ol>
+
+            </section>
+
+        </main>
+
+        <aside id="portfolio-contact">
+
+            <h3>Contact Information</h3>
+
+            <p>Email: harshika@example.com</p>
+
+            <p>Phone: 9876543210</p>
+
+            <p>
+                LinkedIn:
+                <a href="https://www.linkedin.com/">
+                    My LinkedIn
+                </a>
+            </p>
+
+        </aside>
+
+        <footer>
+
+            <p>
+                &copy; 2026 Harshika Goyal.
+                All Rights Reserved.
+            </p>
+
+        </footer>
+
+    </section>
+
+    <hr>
+
+    <footer>
+        <h2>End of HTML Assignment</h2>
+        <p>&copy; 2026 Harshika Goyal</p>
+    </footer>
+
+</body>
+</html>
