@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Exploration</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        /* Box Model demonstration */
+        .box-model {
+            width: 300px;
+
+            /* Margin */
+            margin: 30px;
+
+            /* Border */
+            border: 15px solid #e67e22;
+
+            /* Padding */
+            padding: 30px;
+
+            /* Content background */
+            background-color: #bde0fe;
+
+            /* Outline */
+            outline: 5px dashed #8e44ad;
+        }
+
+        /* Content layer */
+        .content {
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #3498db;
+        }
+
+        .description {
+            width: 300px;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .description h2 {
+            text-align: center;
+        }
+
+        .description p {
+            line-height: 1.6;
+        }
+
+        /* Default box-sizing */
+        .default-box {
+            width: 200px;
+            padding: 20px;
+            border: 10px solid #3498db;
+            background-color: #d6eaf8;
+            box-sizing: content-box;
+        }
+
+        /* Border-box */
+        .border-box {
+            width: 200px;
+            padding: 20px;
+            border: 10px solid #27ae60;
+            background-color: #d5f5e3;
+            box-sizing: border-box;
+        }
+
+        .comparison {
+            margin-top: 50px;
+        }
+
+        .comparison-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        footer {
+            margin-top: 40px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Box Model Exploration</h1>
+
+    <p>
+        Every HTML element consists of content, padding, border and margin.
+    </p>
+
+    <main>
+
+        <section class="container">
+
+            <div class="box-model">
+
+                <div class="content">
+                    <h2>Content</h2>
+                    <p>Actual content of the element.</p>
+                </div>
+
+            </div>
+
+            <div class="description">
+
+                <h2>Box Model Parts</h2>
+
+                <p>
+                    <strong>Content:</strong> Actual text or information.
+                </p>
+
+                <p>
+                    <strong>Padding:</strong> Space between content and border.
+                </p>
+
+                <p>
+                    <strong>Border:</strong> Line around the padding and content.
+                </p>
+
+                <p>
+                    <strong>Margin:</strong> Space outside the border.
+                </p>
+
+                <p>
+                    <strong>Outline:</strong> Extra line outside the element.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="comparison">
+
+            <h2>Box-Sizing Comparison</h2>
+
+            <div class="comparison-container">
+
+                <div>
+                    <h3>Default: content-box</h3>
+
+                    <div class="default-box">
+                        Width = 200px<br>
+                        Padding = 20px<br>
+                        Border = 10px
+                    </div>
+                </div>
+
+                <div>
+                    <h3>border-box</h3>
+
+                    <div class="border-box">
+                        Width = 200px<br>
+                        Padding = 20px<br>
+                        Border = 10px
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        Box Model Exploration Page
+    </footer>
+
+</body>
+</html>

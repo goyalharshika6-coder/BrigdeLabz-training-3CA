@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Paris</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #172033;
+        }
+
+        header {
+            background-color: #172554;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+        }
+
+        nav {
+            background-color: #1e3a8a;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        /* First section uses a linear gradient */
+        .intro {
+            min-height: 500px;
+            padding: 100px 10%;
+
+            background:
+                linear-gradient(
+                    rgba(30, 58, 138, 0.7),
+                    rgba(14, 116, 144, 0.7)
+                ),
+                url("https://picsum.photos/id/318/1600/900");
+
+            background-size: cover;
+            background-position: center;
+
+            background-attachment: fixed;
+
+            color: white;
+        }
+
+        .intro h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .intro p {
+            font-size: 1.2rem;
+            max-width: 700px;
+        }
+
+        /* Second section uses radial gradient */
+        .history {
+            padding: 80px 10%;
+            background:
+                radial-gradient(
+                    circle,
+                    #fef3c7,
+                    #fde68a,
+                    #f59e0b
+                );
+
+            border: 5px solid #f59e0b;
+        }
+
+        .history h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .history p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        /* Third section */
+        .culture {
+            min-height: 500px;
+            padding: 100px 10%;
+
+            background-image:
+                url("https://picsum.photos/id/433/1600/900");
+
+            background-size: cover;
+            background-position: center;
+
+            background-attachment: fixed;
+
+            color: white;
+        }
+
+        .culture h2 {
+            font-size: 2.8rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+
+        .culture p {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 25px;
+            max-width: 700px;
+            line-height: 1.8;
+        }
+
+        footer {
+            background-color: #172554;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 600px) {
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .intro h2,
+            .culture h2 {
+                font-size: 2rem;
+            }
+
+            .intro,
+            .culture {
+                background-attachment: scroll;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Explore Paris</h1>
+        <p>The City of Lights</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#history">History</a>
+        <a href="#culture">Culture</a>
+    </nav>
+
+    <main>
+
+        <section class="intro" id="home">
+
+            <h2>Welcome to Paris</h2>
+
+            <p>
+                Paris is one of the world's most famous cities.
+                It is known for its beautiful architecture,
+                art, fashion, food and historical landmarks.
+            </p>
+
+        </section>
+
+        <section class="history" id="history">
+
+            <h2>History</h2>
+
+            <p>
+                Paris has a long and fascinating history.
+                The city developed around the River Seine
+                and became an important center of culture,
+                politics and education.
+            </p>
+
+            <p>
+                Today, millions of visitors travel to Paris
+                every year to experience its historical
+                buildings and famous landmarks.
+            </p>
+
+        </section>
+
+        <section class="culture" id="culture">
+
+            <h2>Culture</h2>
+
+            <p>
+                Paris is famous for its art, museums, cuisine
+                and fashion. The city has influenced artists,
+                writers, designers and filmmakers around the world.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Explore Paris</p>
+    </footer>
+
+</body>
+</html>

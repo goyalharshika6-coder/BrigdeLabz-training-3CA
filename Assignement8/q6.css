@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+}
+
+.animation-page {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.stage {
+    width: min(700px, 90vw);
+    min-height: 350px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 25px;
+    overflow: hidden;
+}
+
+/* Moving box */
+.box {
+    padding: 18px 30px;
+    background: #2563eb;
+    color: white;
+    border-radius: 8px;
+
+    animation:
+        moveBox 3s ease-in-out infinite alternate;
+}
+
+/* Bouncing ball */
+.ball {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+    background: #ef4444;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation:
+        bounce 1.2s ease-in-out infinite;
+
+    animation-delay: 0.3s;
+}
+
+/* Color-changing text */
+.color-text {
+    font-size: 22px;
+    font-weight: bold;
+
+    animation:
+        colorChange 2s ease-in-out infinite alternate;
+}
+
+/* Moving animation */
+@keyframes moveBox {
+
+    from {
+        transform: translateX(-180px);
+    }
+
+    to {
+        transform: translateX(180px);
+    }
+}
+
+/* Bouncing animation */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(-30px);
+    }
+
+    50% {
+        transform: translateY(40px);
+    }
+}
+
+/* Text animation */
+@keyframes colorChange {
+
+    0% {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1.15);
+    }
+}

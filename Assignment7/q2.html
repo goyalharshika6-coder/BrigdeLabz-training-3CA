@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height and Width Practice</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        main {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            padding: 20px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 30vh;
+            background-color: lightcoral;
+        }
+
+        .box2 {
+            width: 30%;
+            max-width: 300px;
+            height: 180px;
+            background-color: lightblue;
+        }
+
+        .box3 {
+            width: 15em;
+            height: 200px;
+            min-height: 150px;
+            max-height: 200px;
+            background-color: lightgreen;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+
+        <div class="box box1">
+            <h2>Box 1</h2>
+            <p>Width: 200px</p>
+            <p>Height: 30vh</p>
+        </div>
+
+        <div class="box box2">
+            <h2>Box 2</h2>
+            <p>Width: 30%</p>
+            <p>Max Width: 300px</p>
+        </div>
+
+        <div class="box box3">
+            <h2>Box 3</h2>
+            <p>Width: 15em</p>
+            <p>Min Height: 150px</p>
+            <p>Max Height: 200px</p>
+            <p>
+                This extra text demonstrates the overflow property.
+                If the content becomes larger than the box,
+                scrolling will appear.
+            </p>
+        </div>
+
+    </main>
+
+</body>
+</html>

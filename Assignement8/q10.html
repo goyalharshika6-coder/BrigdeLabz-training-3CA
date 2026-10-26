@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Mini User Interface</title>
+
+    <link rel="stylesheet" href="q10.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <h1>My Mini Website</h1>
+
+    <nav aria-label="Main Navigation">
+
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+
+    </nav>
+
+</header>
+
+
+<main class="main-area">
+
+    <section class="card">
+
+        <!-- Small image -->
+        <div class="card-image">
+
+            <img
+                src="https://picsum.photos/180/120?random=25"
+                alt="Small nature image"
+            >
+
+        </div>
+
+
+        <div class="card-content">
+
+            <h2>Contact Us</h2>
+
+            <p>
+                Fill in the form to send us a quick message.
+            </p>
+
+
+            <!-- Form -->
+            <form>
+
+                <label for="name">
+                    Name
+                </label>
+
+                <input
+                    id="name"
+                    type="text"
+                    placeholder="Enter your name"
+                >
+
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    id="email"
+                    type="email"
+                    placeholder="Enter your email"
+                >
+
+
+                <label for="message">
+                    Message
+                </label>
+
+                <textarea
+                    id="message"
+                    rows="3"
+                    placeholder="Write your message"
+                ></textarea>
+
+
+                <!-- Buttons -->
+                <div class="form-buttons">
+
+                    <button type="submit">
+                        Submit
+                    </button>
+
+                    <button
+                        type="reset"
+                        class="reset"
+                    >
+                        Reset
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        &copy; 2026 My Mini Website | All Rights Reserved
+    </p>
+
+</footer>
+
+</body>
+</html>

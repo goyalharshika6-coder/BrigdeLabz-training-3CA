@@ -1,0 +1,251 @@
+/* Apply consistent box-sizing */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: Arial, sans-serif;
+
+    background: #f3f4f6;
+    color: #1f2937;
+}
+
+
+/* Header */
+.site-header {
+    padding: 18px 30px;
+
+    background: #1f2937;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    padding: 9px 14px;
+
+    border: 1px solid #6b7280;
+    border-radius: 6px;
+
+    transition: 0.3s ease;
+}
+
+
+/* Hover pseudo-class */
+nav a:hover {
+    background: #374151;
+}
+
+
+/* Focus pseudo-class */
+nav a:focus {
+    outline: 3px solid #93c5fd;
+    outline-offset: 2px;
+}
+
+
+/* Main area */
+.main-area {
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 35px 20px;
+}
+
+
+/* Main content card */
+.card {
+    width: min(700px, 100%);
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 28px;
+
+    padding: 28px;
+
+    background: white;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Small image */
+.card-image img {
+    width: 180px;
+    height: 120px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    display: block;
+}
+
+
+/* Form content */
+.card-content {
+    flex: 1;
+}
+
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+/* Input and textarea */
+input,
+textarea {
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #9ca3af;
+
+    border-radius: 7px;
+
+    font: inherit;
+}
+
+
+/* Focus effect */
+input:focus,
+textarea:focus {
+    outline: 3px solid #bfdbfe;
+
+    border-color: #2563eb;
+}
+
+
+/* Buttons */
+.form-buttons {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 8px;
+}
+
+button {
+    padding: 10px 18px;
+
+    border: 1px solid #2563eb;
+
+    border-radius: 7px;
+
+    background: #2563eb;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+/* Hover effect */
+button:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-1px);
+}
+
+
+/* Focus effect */
+button:focus {
+    outline: 3px solid #93c5fd;
+
+    outline-offset: 2px;
+}
+
+
+/* Reset button */
+button.reset {
+    background: #6b7280;
+
+    border-color: #6b7280;
+}
+
+button.reset:hover {
+    background: #4b5563;
+}
+
+
+/* Footer */
+footer {
+    padding: 18px;
+
+    text-align: center;
+
+    background: #1f2937;
+
+    color: white;
+}
+
+
+/* Responsive design */
+@media (max-width: 700px) {
+
+    .site-header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-image img {
+        width: 160px;
+        height: 105px;
+    }
+
+    .form-buttons {
+        justify-content: center;
+    }
+}

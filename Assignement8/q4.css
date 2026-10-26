@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1f2937;
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f172a;
+    color: white;
+}
+
+.card {
+    max-width: 750px;
+    margin: 35px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Element selector */
+p {
+    line-height: 1.6;
+}
+
+/* Class selector */
+.special {
+    background: #fef3c7;
+    padding: 8px;
+}
+
+/* ID selector */
+#unique {
+    background: #dbeafe;
+    padding: 8px;
+}
+
+/* Attribute selector */
+a[target="_blank"] {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+/* Descendant selector */
+.parent p {
+    color: #166534;
+}
+
+/* Child selector */
+.list > li {
+    padding: 7px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Adjacent sibling selector */
+.sibling + span {
+    background: #fce7f3;
+    padding: 5px;
+}
+
+/* General sibling selector */
+.sibling ~ span {
+    border-left: 3px solid #9333ea;
+    padding-left: 8px;
+}

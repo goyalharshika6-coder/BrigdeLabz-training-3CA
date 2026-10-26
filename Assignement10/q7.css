@@ -1,0 +1,26 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.task-panel {
+    max-width: 750px;
+}
+
+.list-group-item {
+    padding: 18px;
+    transition: background-color 0.2s;
+}
+
+.list-group-item:hover {
+    background-color: #f1f5f9;
+}
+
+.badge {
+    white-space: nowrap;
+}
+
+footer {
+    margin-top: 40px;
+}

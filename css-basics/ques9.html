@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Daily Tech Magazine</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            font-family: Georgia, "Times New Roman", serif;
+
+            background-color: #e5e7eb;
+
+            color: #1f2937;
+
+            line-height: 1.7;
+        }
+
+        header {
+
+            background-color: #111827;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 30px;
+
+            border-bottom: 5px solid #dc2626;
+        }
+
+        header h1 {
+
+            font-family: Arial, sans-serif;
+
+            font-size: 2.8rem;
+
+            font-weight: 900;
+
+            letter-spacing: 2px;
+        }
+
+        main {
+
+            width: 90%;
+
+            max-width: 1200px;
+
+            margin: 40px auto;
+
+            padding: 40px;
+
+            background-color: white;
+
+            border: 1px solid #d1d5db;
+
+            box-shadow:
+                0 5px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        /* Heading spans all three columns */
+        main h2 {
+
+            column-span: all;
+
+            text-align: center;
+
+            font-family: Arial, sans-serif;
+
+            font-size: 2.2rem;
+
+            font-weight: 800;
+
+            color: #991b1b;
+
+            margin-bottom: 25px;
+
+            padding-bottom: 15px;
+
+            border-bottom: 3px solid #991b1b;
+        }
+
+        /* Three vertical columns */
+        .article-content {
+
+            column-count: 3;
+
+            column-gap: 35px;
+
+            column-rule: 1px solid #d1d5db;
+        }
+
+        .article-content p {
+
+            text-align: justify;
+
+            font-size: 1rem;
+
+            margin-bottom: 20px;
+        }
+
+        /* Float image to left */
+        .article-image {
+
+            float: left;
+
+            width: 180px;
+
+            height: 120px;
+
+            object-fit: cover;
+
+            margin: 0 15px 10px 0;
+
+            border-radius: 5px;
+
+            border: 3px solid #374151;
+        }
+
+        .article-content h3 {
+
+            font-family: Arial, sans-serif;
+
+            font-size: 1.3rem;
+
+            font-weight: 700;
+
+            margin-bottom: 10px;
+        }
+
+        footer {
+
+            background-color: #111827;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 25px;
+        }
+
+        @media (max-width: 900px) {
+
+            .article-content {
+                column-count: 2;
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            main {
+                width: 95%;
+                padding: 20px;
+            }
+
+            .article-content {
+                column-count: 1;
+                column-rule: none;
+            }
+
+            main h2 {
+                font-size: 1.7rem;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>THE DAILY TECH</h1>
+
+        <p>Technology • Innovation • Future</p>
+
+    </header>
+
+    <main>
+
+        <h2>
+            Technology Is Changing the Modern World
+        </h2>
+
+        <div class="article-content">
+
+            <h3>
+                The Digital Revolution
+            </h3>
+
+            <img
+                class="article-image"
+                src="https://picsum.photos/id/1/500/300"
+                alt="Technology"
+            >
+
+            <p>
+                Technology has become one of the most important
+                parts of modern society. Computers, smartphones,
+                cloud services and digital platforms have changed
+                how people communicate, work and learn.
+            </p>
+
+            <p>
+                The internet has made information available to
+                millions of people around the world. Students can
+                attend online classes and professionals can work
+                from almost anywhere.
+            </p>
+
+            <p>
+                Artificial intelligence is becoming an important
+                part of everyday technology. AI systems can analyze
+                large amounts of information and help people solve
+                complex problems.
+            </p>
+
+            <h3>
+                Cloud Computing
+            </h3>
+
+            <p>
+                Cloud computing has changed the way organizations
+                store and manage information. Companies can use
+                remote computing resources instead of depending
+                completely on physical hardware.
+            </p>
+
+            <p>
+                Cloud technology has helped developers build
+                applications more quickly. Storage, databases,
+                networking and computing resources can be accessed
+                through cloud platforms.
+            </p>
+
+            <p>
+                The Internet of Things is another important
+                development. Smart watches, smart home devices
+                and connected vehicles can communicate with networks.
+            </p>
+
+            <h3>
+                Future of Technology
+            </h3>
+
+            <p>
+                The future of technology will bring both
+                opportunities and challenges. Cybersecurity and
+                privacy will become increasingly important as more
+                information moves online.
+            </p>
+
+            <p>
+                Education will also play an important role.
+                Students who understand programming, cloud computing
+                and artificial intelligence will have many
+                opportunities.
+            </p>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy; 2026 The Daily Tech Magazine
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

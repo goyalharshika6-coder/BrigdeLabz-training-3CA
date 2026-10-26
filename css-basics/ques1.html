@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
+    <style>
+
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body uses flexbox so footer stays at bottom */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: #172033;
+
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Fixed header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+
+            background-color: #172554;
+            color: white;
+
+            padding: 20px 5%;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            font-size: 1.8rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        nav a:hover {
+            color: #7dd3fc;
+        }
+
+        /* Main section */
+        main {
+            flex: 1;
+
+            margin-top: 90px;
+            min-height: 80vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 5%;
+        }
+
+        .intro {
+            width: 90%;
+            max-width: 1000px;
+
+            display: flex;
+            align-items: center;
+            gap: 5%;
+        }
+
+        .bio {
+            flex: 1;
+        }
+
+        .bio h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #1e3a8a;
+        }
+
+        .bio p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .profile-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .profile-image img {
+            width: 280px;
+            height: 280px;
+
+            border-radius: 50%;
+            object-fit: cover;
+
+            border: 5px solid #2563eb;
+        }
+
+        /* Footer stays at bottom */
+        footer {
+            background-color: #172554;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            .intro {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-image img {
+                width: 220px;
+                height: 220px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>Goldy Pandey</h1>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="intro">
+
+            <div class="bio">
+                <h2>Hello, I'm Goldy</h2>
+
+                <p>
+                    I am a B.Tech Computer Science student passionate
+                    about programming, web development, cloud computing,
+                    and learning new technologies. I enjoy building
+                    projects and improving my technical skills.
+                </p>
+            </div>
+
+            <div class="profile-image">
+                <img
+                    src="https://picsum.photos/300"
+                    alt="Profile Image"
+                >
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Harshika Goyal. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

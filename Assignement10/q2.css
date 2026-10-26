@@ -1,0 +1,22 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.contact-form {
+    max-width: 600px;
+}
+
+.btn {
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}

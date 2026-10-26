@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f6fa;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    background-color: #1f2937;
+    color: white;
+    padding: 25px;
+}
+
+.examples {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.example {
+    width: 220px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.example a,
+.example button {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #2563eb;
+    border-radius: 7px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* :hover changes the style when mouse is over the element */
+.example a:hover {
+    background-color: #1d4ed8;
+}
+
+/* :focus applies when the element receives keyboard focus */
+.example button:focus {
+    outline: 3px solid #93c5fd;
+    outline-offset: 2px;
+}
+
+/* :active applies while the button is being pressed */
+.active-btn:active {
+    transform: scale(0.94);
+    background-color: #111827;
+}
+
+.example ul {
+    padding: 0;
+}
+
+.example li {
+    list-style: none;
+    padding: 7px;
+    margin: 4px;
+    background-color: #e5e7eb;
+}
+
+/* :nth-child() targets a specific child */
+.example li:nth-child(3) {
+    background-color: #fbbf24;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f2937;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .examples {
+        padding: 20px;
+    }
+}

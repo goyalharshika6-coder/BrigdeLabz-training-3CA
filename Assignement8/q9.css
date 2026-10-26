@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ecfeff;
+}
+
+.page {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px;
+}
+
+.effects {
+    width: 100%;
+    max-width: 850px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    gap: 25px;
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+}
+
+.effect {
+    padding: 14px 28px;
+
+    border-radius: 10px;
+    border: 2px solid;
+
+    text-decoration: none;
+    font: inherit;
+
+    cursor: pointer;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.one {
+    background: #2563eb;
+    border-color: #2563eb;
+    color: white;
+}
+
+.two {
+    background: #16a34a;
+    border-color: #16a34a;
+    color: white;
+}
+
+.three {
+    background: #ea580c;
+    border-color: #ea580c;
+    color: white;
+}
+
+.link {
+    background: white;
+    border-color: #7c3aed;
+    color: #7c3aed;
+}
+
+/* Hover + transformation */
+.effect:hover {
+    transform: scale(1.08) translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.one:hover {
+    background: #1d4ed8;
+}
+
+.two:hover {
+    background: #15803d;
+}
+
+.three:hover {
+    background: #c2410c;
+}
+
+.link:hover {
+    background: #ede9fe;
+}
+
+/* Active effect */
+.effect:active {
+    transform: scale(0.96);
+}
+
+/* Focus effect */
+.effect:focus {
+    outline: 3px solid #94a3b8;
+    outline-offset: 3px;
+}
