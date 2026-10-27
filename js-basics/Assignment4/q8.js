@@ -1,0 +1,31 @@
+"use strict";
+
+const user = {
+    name: "John",
+    email: "john@mail.com",
+    age: 21
+};
+
+// Show initial values in the form
+document.getElementById("name").value = user.name;
+document.getElementById("email").value = user.email;
+document.getElementById("age").value = user.age;
+
+function displayUser() {
+    document.getElementById("output").textContent =
+        JSON.stringify(user, null, 2);
+}
+
+displayUser();
+
+document.getElementById("userForm")
+    .addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        user.name = document.getElementById("name").value;
+        user.email = document.getElementById("email").value;
+        user.age = Number(document.getElementById("age").value);
+
+        displayUser();
+        console.log("Updated user:", user);
+    });
