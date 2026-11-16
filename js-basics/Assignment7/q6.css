@@ -1,0 +1,22 @@
+body {
+    font-family: Arial;
+    margin: 30px;
+}
+
+input {
+    padding: 8px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px 20px;
+}
+
+#result {
+    color: red;
+}

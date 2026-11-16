@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi Step Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <div id="step1" class="step">
+        <h3>Step 1: Name</h3>
+        <input type="text" id="name" placeholder="Enter name">
+        <button id="next1">Next</button>
+    </div>
+
+    <div id="step2" class="step">
+        <h3>Step 2: Email</h3>
+        <input type="email" id="email" placeholder="Enter email">
+        <button id="back2">Back</button>
+        <button id="next2">Next</button>
+    </div>
+
+    <div id="step3" class="step">
+        <h3>Step 3: Password</h3>
+        <input type="password" id="password" placeholder="Enter password">
+        <button id="back3">Back</button>
+        <button id="submit">Submit</button>
+    </div>
+
+    <div id="summary"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+body {
+    font-family: Arial;
+    margin: 30px;
+}
+
+.step {
+    display: none;
+}
+
+.step.active {
+    display: block;
+}
+
+input {
+    padding: 8px;
+    margin: 10px;
+}
+
+button {
+    padding: 8px;
+}

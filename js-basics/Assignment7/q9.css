@@ -1,0 +1,28 @@
+body {
+    font-family: Arial;
+    margin: 30px;
+}
+
+input {
+    display: block;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+button {
+    padding: 8px;
+    margin-top: 10px;
+}
+
+.error {
+    color: red;
+}
+
+#success {
+    color: green;
+}
