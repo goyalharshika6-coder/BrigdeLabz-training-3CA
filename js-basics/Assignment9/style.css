@@ -1,0 +1,55 @@
+/* Common CSS for all questions */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #263b5a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    color: #263b5a;
+}
+
+button {
+    background-color: #315b91;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1f416d;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #555;
+}

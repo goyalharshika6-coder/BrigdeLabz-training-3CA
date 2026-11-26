@@ -48,3 +48,37 @@ resetButton.addEventListener("click", function () {
     counter.className = "";
 
 });
+//checkbox selection :-
+document.querySelector("#btn").addEventListener("click",)
+console.log(checkoutput);
+let file = document.querySelector("input[type=file]");
+console.log(file.files)
+document.querySelector("img").src = URL.createrObjectURL(file.files[0]); 6
+//timers and timeouts
+//setTimeout(callback, timeout, args)
+let timeout = seTtimeout((a) =>{
+    console.log("timeout", a)
+}, 2000, "hello");
+
+}
+let count = 0;
+let interval = setInterval(()==>{
+    console.log("interval")
+    document.querySelector("button").textContent = ++count
+    let inteval = setInterval(() => {
+        document.querySelector("body").style.background = 'rgb(${Math.random()*88}, ${Math.random()*233}, ${Math.random()*111})'
+    }, 100)
+}
+//promise;
+let pro = new Promise((resolved, reject) => {
+    setTimeout(()=> {
+        //reject("failed");
+        resolve("passed");
+    }, 1000);
+})
+console.log(pro);
+//then, catch
+pro.then((result)=>{console.log(result) })
+pro.catch((err => { con
+})   
+let pro1 = new Promise((resolve, reject) =>)
