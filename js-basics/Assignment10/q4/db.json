@@ -1,0 +1,23 @@
+{
+  "users": [
+    { "id": 1, "name": "Rahul" },
+    { "id": 2, "name": "Priya" },
+    { "id": 3, "name": "Aman" },
+    { "id": 4, "name": "Neha" },
+    { "id": 5, "name": "Rohit" }
+  ],
+  "orders": [
+    { "id": 1, "product": "Laptop" },
+    { "id": 2, "product": "Mobile" },
+    { "id": 3, "product": "Watch" },
+    { "id": 4, "product": "Keyboard" },
+    { "id": 5, "product": "Mouse" }
+  ],
+  "products": [
+    { "id": 1, "name": "Laptop" },
+    { "id": 2, "name": "Mobile" },
+    { "id": 3, "name": "Watch" },
+    { "id": 4, "name": "Keyboard" },
+    { "id": 5, "name": "Mouse" }
+  ]
+}
